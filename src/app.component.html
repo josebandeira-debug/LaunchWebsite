@@ -1,0 +1,199 @@
+<div class="min-h-screen bg-[#F9F9F9] selection:bg-[#4F46E5] selection:text-white font-sans overflow-x-hidden text-slate-900">
+  
+  <nav class="fixed w-full z-50 top-0 left-0 bg-[#F9F9F9]/90 backdrop-blur-xl border-b border-gray-200/50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-bold text-xl tracking-tighter text-slate-900 flex items-center gap-2">
+        <span class="text-[#4F46E5] text-2xl">●</span> Inturi
+      </div>
+      <button (click)="scrollToWaitlist()" class="text-sm font-medium text-slate-600 hover:text-[#4F46E5] transition-colors">
+        Acesso Beta
+      </button>
+    </div>
+  </nav>
+
+  <section class="relative pt-36 pb-20 px-6 lg:pt-48 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      
+      <div class="space-y-10 animate-fade-in-up z-10">
+        <div class="space-y-6">
+          <h1 class="text-6xl lg:text-8xl font-semibold tracking-tighter text-slate-900 leading-[1.05]">
+            A tua intuição,<br>
+            <span class="text-[#4F46E5]">materializada.</span>
+          </h1>
+          
+          <p class="text-2xl text-slate-500 max-w-lg leading-relaxed font-light">
+            Do pensamento à execução. A plataforma que descodifica a sua visão estratégica e a converte numa infraestrutura digital sólida, eficiente e escalável.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-5 pt-4">
+          <div class="flex -space-x-3">
+             <img src="https://picsum.photos/64/64?random=1" class="w-10 h-10 rounded-full border-2 border-white grayscale hover:grayscale-0 transition-all" alt="Founder">
+             <img src="https://picsum.photos/64/64?random=2" class="w-10 h-10 rounded-full border-2 border-white grayscale hover:grayscale-0 transition-all" alt="Founder">
+             <img src="https://picsum.photos/64/64?random=3" class="w-10 h-10 rounded-full border-2 border-white grayscale hover:grayscale-0 transition-all" alt="Founder">
+          </div>
+          <p class="text-sm font-medium text-slate-400">Preferido por fundadores exigentes.</p>
+        </div>
+      </div>
+
+      <div class="relative lg:h-[600px] flex items-center justify-center animate-fade-in-up" style="animation-delay: 0.4s">
+        <div class="absolute inset-0 bg-gradient-to-tr from-[#4F46E5]/20 to-transparent rounded-full filter blur-[100px] opacity-40"></div>
+        
+        <div class="relative z-10 w-full max-w-[550px] aspect-square flex items-center justify-center group">
+          <img
+            src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?q=80&w=1000&auto=format&fit=crop"
+            alt="Visual Fluido e Orgânico"
+            loading="lazy"
+            decoding="async"
+            class="max-h-full max-w-full object-cover rounded-[4rem] shadow-2xl transition-all duration-1000 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-[#4F46E5]/10 blur-[80px] rounded-full -z-10 group-hover:bg-[#4F46E5]/20 transition-colors duration-1000"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-6 bg-white border-y border-gray-100">
+    <div class="max-w-[1400px] mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        
+        <div class="space-y-6">
+          <div class="mb-10">
+            <h2 class="text-xs font-bold text-[#4F46E5] uppercase tracking-[0.2em] mb-4">A Nova Era</h2>
+            <h3 class="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
+              A excelência não é um detalhe. <br class="hidden md:block">É o padrão.
+            </h3>
+          </div>
+
+          <div class="bg-gradient-to-r from-[#4F46E5] to-[#818CF8] p-8 rounded-[2rem] text-white shadow-xl shadow-[#4F46E5]/10 flex items-center gap-6 relative overflow-hidden group hover:shadow-2xl hover:shadow-[#4F46E5]/30 transition-all duration-300">
+            <div class="relative z-10 w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md shrink-0 text-3xl">🗓️</div>
+            <div class="relative z-10 flex-1">
+              <h4 class="text-2xl font-bold mb-1 tracking-tight">Sincronia Antecipada</h4>
+              <p class="text-white/90 font-light text-sm">A eliminação do erro humano. Uma agenda que pensa à frente e garante a rentabilidade de cada marcação.</p>
+            </div>
+          </div>
+
+          <div class="bg-[#F9F9F9] p-10 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300 min-h-[220px] flex flex-col justify-center">
+            <h4 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Design Sensorial</h4>
+            <p class="text-lg text-slate-500 leading-relaxed font-light">Processos perfeitos nos bastidores. Deixe o trabalho mecânico para o algoritmo e a visão para si.</p>
+          </div>
+
+          <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 flex items-center justify-between group hover:shadow-xl transition-all duration-300">
+             <div class="flex-1">
+                <h4 class="text-2xl font-bold text-slate-900 mb-2 tracking-tight flex items-center gap-3">
+                  <span class="text-3xl">🎻</span> Inteligência Espacial
+                </h4>
+                <p class="text-slate-500 font-light">A ciência de garantir que cada metro quadrado e cada recurso rendam o seu potencial máximo.</p>
+             </div>
+             <div class="text-right">
+                <span class="block text-[10px] font-bold text-[#4F46E5] uppercase tracking-widest mb-1">Eficiência</span>
+                <span class="text-2xl font-mono text-slate-900">100%</span>
+             </div>
+          </div>
+        </div>
+
+        <div class="space-y-6 flex flex-col justify-end">
+          <div class="bg-slate-900 p-10 rounded-[2rem] text-white relative overflow-hidden group hover:shadow-2xl transition-all duration-300 min-h-[280px] flex flex-col justify-center shadow-2xl">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-[#4F46E5] rounded-full blur-[100px] opacity-30"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm">⚡</div>
+                <h4 class="text-2xl font-bold tracking-tight">O Fim da Interface</h4>
+              </div>
+              <p class="text-slate-300 font-light text-lg">Fluidez absoluta e estética minimalista para quem valoriza a clareza visual.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 bg-[#25D366]/10 text-[#25D366] rounded-xl flex items-center justify-center mb-4 text-2xl">💬</div>
+                <h4 class="text-lg font-bold text-slate-900">Diálogo Nativo</h4>
+                <p class="text-slate-500 text-sm font-light mt-2">O fim dos custos arcaicos. WhatsApp integrado de forma inteligente, orgânica e sem atrito..</p>
+              </div>
+              <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 bg-[#4F46E5]/5 text-[#4F46E5] rounded-xl flex items-center justify-center mb-4 text-2xl">📈</div>
+                <h4 class="text-lg font-bold text-slate-900">Ativo de Alta Performance</h4>
+                <p class="text-slate-500 text-sm font-light mt-2">O software que deixa de ser um custo para se tornar a coluna mais lucrativa do seu negócio.</p>
+              </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-lg shadow-gray-100/50 group hover:shadow-xl transition-all duration-300">
+             <div class="flex gap-1 text-yellow-400 text-lg mb-4">★★★★★</div>
+             <h4 class="text-xl font-bold text-slate-900 mb-2">Autoridade Magnética</h4>
+             <p class="text-slate-500 font-light">Transforme satisfação em prestígio. Google Reviews automáticas que atraem o mundo.</p>
+             <div class="mt-6 pt-4 border-t border-gray-50 text-[10px] text-slate-400 font-bold uppercase tracking-wider">Google Reviews Booster</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+          <h4 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-3"><span class="text-2xl">📐</span> Otimização de Espaço</h4>
+          <p class="text-slate-500 text-sm font-light">Salas sempre cheias. Gestão inteligente de presenças e listas de espera em tempo real.</p>
+        </div>
+        <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+          <h4 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-3"><span class="text-2xl">🤝</span> Ritmo de Grupo</h4>
+          <p class="text-slate-500 text-sm font-light">Visão panorâmica com proteção nativa. O sistema que bloqueia sobreposições e respeita o tempo da equipa.</p>
+        </div>
+        <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+          <h4 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-3"><span class="text-2xl">🛡️</span> Conformidade Ética</h4>
+          <p class="text-slate-500 text-sm font-light">RGPD nativo e invisível. Proteção total com a sofisticação que os seus clientes exigem.</p>
+        </div>
+        <div class="bg-[#F9F9F9] p-8 rounded-[2rem] border border-gray-100 group hover:shadow-xl transition-all duration-300">
+          <h4 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-3"><span class="text-2xl">👥</span> Sem Fronteiras</h4>
+          <p class="text-slate-500 text-sm font-light">Tecnologia que expande com a sua visão. Ferramentas desenhadas para a escala da sua ambição.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="waitlist" class="py-32 px-6 bg-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-[#F9F9F9] to-transparent -z-10 rounded-b-full opacity-50"></div>
+
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-5xl md:text-7xl font-semibold text-slate-900 mb-8 tracking-tighter">
+        Junte-se ao <br><span class="text-[#4F46E5]">novo padrão.</span>
+      </h2>
+      <p class="text-xl md:text-2xl text-slate-500 mb-14 font-light max-w-2xl mx-auto leading-relaxed">
+        Garanta o seu lugar na Beta Privada e aceda a benefícios vitalícios exclusivos.
+      </p>
+
+      <div class="bg-white p-2 rounded-full shadow-2xl shadow-slate-200/50 border border-gray-100 max-w-[500px] mx-auto transform transition-all hover:scale-[1.01] hover:shadow-[#4F46E5]/10">
+        @if (submitted()) {
+          <div class="flex items-center justify-center h-16 text-[#4F46E5] font-medium animate-fade-in-up text-lg">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Bem-vindo à Inturi. Entraremos em contacto.
+          </div>
+        } @else {
+          <form (submit)="onSubmit()" class="flex flex-col sm:flex-row gap-2">
+            <input 
+              type="email" 
+              [ngModel]="email()"
+              (ngModelChange)="email.set($event)"
+              name="email"
+              placeholder="founder@empresa.com" 
+              required
+              class="flex-1 h-16 px-8 rounded-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-0 text-lg"
+            >
+            <button 
+              type="submit" 
+              [disabled]="isLoading() || !email()"
+              class="h-16 px-10 rounded-full bg-[#4F46E5] hover:bg-[#4338ca] text-white font-medium text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center min-w-[160px] shadow-lg shadow-[#4F46E5]/20 hover:shadow-xl hover:shadow-[#4F46E5]/30"
+            >
+              Aderir Agora
+            </button>
+          </form>
+        }
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-16 border-t border-gray-100 bg-white">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 font-medium">
+      <div>&copy; 2026 Inturi Inc. Todos os direitos reservados.</div>
+      <div class="flex gap-10">
+      </div>
+    </div>
+  </footer>
+</div>

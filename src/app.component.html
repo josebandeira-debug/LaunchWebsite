@@ -5,7 +5,7 @@
       <div class="font-bold text-xl tracking-tighter text-slate-900 flex items-center gap-2">
         <span class="text-[#4F46E5] text-2xl">●</span> Inturi
       </div>
-      <button class="text-sm font-medium text-slate-600 hover:text-[#4F46E5] transition-colors">
+      <button (click)="scrollToWaitlist()" class="text-sm font-medium text-slate-600 hover:text-[#4F46E5] transition-colors">
         Acesso Beta
       </button>
     </div>
@@ -179,7 +179,7 @@
     </div>
   </section>
 
-  <section class="py-32 px-6 bg-white relative overflow-hidden">
+  <section id="waitlist" class="py-32 px-6 bg-white relative overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-[#F9F9F9] to-transparent -z-10 rounded-b-full opacity-50"></div>
 
     <div class="max-w-4xl mx-auto text-center">
@@ -191,21 +191,40 @@
       </p>
 
       <div class="bg-white p-2 rounded-full shadow-2xl shadow-slate-200/50 border border-gray-100 max-w-[500px] mx-auto transform transition-all hover:scale-[1.01] hover:shadow-[#4F46E5]/10">
-        <form class="flex flex-col sm:flex-row gap-2">
-          <input 
-            type="email" 
-            placeholder="founder@empresa.com" 
-            required
-            class="flex-1 h-16 px-8 rounded-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-0 text-lg"
-          >
+        @if (submitted()) {
+          <div class="flex items-center justify-center h-16 text-[#4F46E5] font-medium animate-fade-in-up text-lg">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Bem-vindo à Inturi. Entraremos em contacto.
+          </div>
+        } @else {
+          <form (submit)="onSubmit(); $event.preventDefault()" class="flex flex-col sm:flex-row gap-2">
+            <input 
+              type="email" 
+              [ngModel]="email()"
+              (ngModelChange)="email.set($event)"
+              name="email"
+              placeholder="founder@empresa.com" 
+              required
+              class="flex-1 h-16 px-8 rounded-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-0 text-lg"
+            >
             <button 
               type="submit" 
               [disabled]="isLoading() || !email()"
               class="h-16 px-10 rounded-full bg-[#4F46E5] hover:bg-[#4338ca] text-white font-medium text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center min-w-[160px] shadow-lg shadow-[#4F46E5]/20 hover:shadow-xl hover:shadow-[#4F46E5]/30"
             >
-            Aderir Agora
-          </button>
-        </form>
+              @if(isLoading()) {
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              } @else {
+                Aderir Agora
+              }
+            </button>
+          </form>
+        }
       </div>
     </div>
   </section>

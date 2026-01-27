@@ -19,7 +19,7 @@ onSubmit() {
 
   this.isLoading.set(true);
 
-  fetch('https://formspree.io/f/maqqogwb', {
+  fetch('https://formspree.io/f/xvzayvvl', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
